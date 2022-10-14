@@ -3,10 +3,10 @@
 
 }
 
-// @font-face {
-//     font-family: Zing Rust Demo;
-//     src: url("./fonts/ZingRustDemo-Base.otf") format("opentype");
-// }
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter-VariableFont_slnt\,wght.ttf") format("opentype");
+}
 
 // @font-face {
 //     font-family: Gilroy;
@@ -24,6 +24,7 @@ li {
 }
 
 html {
+
     height: 100%;
 }
 
@@ -43,6 +44,7 @@ body {}
     background-color: #fff;
     border-radius: 50%;
     position: relative;
+    padding: 20px;
     transition: all .3s;
 }
 
@@ -65,21 +67,24 @@ body {}
     justify-content: space-between;
     padding: 22px 76px;
 
-    .btn {
-        padding: 12px 28px;
-        background: #426DFF;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height */
 
-        text-align: center;
-        letter-spacing: 0.05em;
-        border-radius: 20px;
-        color: #FFFFFF;
-    }
+}
+
+.btn {
+    display: inline;
+    padding: 12px 28px;
+    background: #426DFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-radius: 20px;
+    color: #FFFFFF;
 }
 
 .menu {
@@ -98,5 +103,205 @@ body {}
         letter-spacing: 0.05em;
 
         color: #FFFFFF;
+    }
+}
+
+.descubra,
+.descubra-two,
+.descubra-three {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.title-green {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 37px;
+    line-height: 45px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #11C56E;
+}
+
+.descubra-two {
+    .right {
+        padding: 137px 30px 160px 48px;
+    }
+}
+
+.descubra,
+.descubra-three {
+    .left {
+        padding: 137px 30px 50px 48px;
+        // background: #F5F5F5;
+width: 50%;
+        .title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 58px;
+            line-height: 70px;
+            letter-spacing: 0.03em;
+
+            color: #000000;
+        }
+
+        .right {
+            padding: 137px 30px 160px 48px;
+        }
+    }
+
+    .text {
+        margin-top: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        /* or 211% */
+
+        letter-spacing: 0.05em;
+
+        color: #000000;
+        margin-bottom: 51px;
+    }
+
+}
+
+.right {
+width: 50%;
+    background: #F5F5F5;
+
+    img {
+
+        height: 100%;
+    }
+
+    .text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        /* or 211% */
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-bottom: 51px;
+    }
+}
+
+.title-center {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 37px;
+    line-height: 45px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #11C56E;
+    margin: 32px auto;
+}
+
+.image-width {
+    flex-basis: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.bk-color {
+    background: #EFF0E8;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.descubra-bottom {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    .right {
+        background-color: #ffffff;
+    }
+
+    .title-red {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 37px;
+        line-height: 45px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #FF1515;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+@media (max-width:1346px) {
+    .top {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:1076px) {
+   
+    .descubra,
+    .descubra-two,
+    .descubra-three {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image-width {
+        flex-basis:100%; 
+       
+    }
+    .descubra .left, .descubra-three .left,.right {      
+        width: 100%;
+    }
+    .descubra-three {
+        line-height: 0;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .descubra-three .right {
+        line-height: 0;
+    }
+    .descubra-bottom {
+       flex-wrap: wrap;
+    }
+}
+@media (max-width:645px) {
+    .menu {
+        gap: 20px;
+        flex-wrap: wrap;
     }
 }
